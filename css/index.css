@@ -133,6 +133,9 @@ nav > ul > li:nth-child(n+2) {
     letter-spacing: -0.36px;
     text-transform: uppercase;
 }
+#page1 .btn {
+    margin-top: 20px;
+}
 .btn {
     border-radius: 40px;
     background: #1770E2;
@@ -142,13 +145,15 @@ nav > ul > li:nth-child(n+2) {
     font-weight: 700;
     line-height: 34px;
     border: none;
-    margin-top: 20px;
 }
 button img {
     width: 24px;
     vertical-align: middle;
     position: relative; 
     margin-bottom: 3px;
+}
+#page2 .btn2 {
+    float: right;
 }
 .btn2 {
     border-radius: 40px;
@@ -159,7 +164,6 @@ button img {
     font-weight: 700;
     line-height: 34px;
     border: none;
-    margin-top: 20px;
 }
 .path1 {
     background:#E7EEF1;
@@ -447,6 +451,9 @@ button img {
     height: 30px;
     border: 1px solid #DDD;
     appearance: none;
+}
+#contact .btn {
+    float: right;
 }
 #footer {
     box-sizing: border-box;
