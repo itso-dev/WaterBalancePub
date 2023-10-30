@@ -9,28 +9,35 @@ ul, li {
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 #header {
-    position: fixed;
     background: white;
     width: 100%;
 }
 .header_inner {
-    width: 60%;
-    margin: 22px auto;
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 258px;
+    max-width: 1280px;
 }
 .logo {
     max-width: 70px;
 }
 .header_inner nav {
     width: 80%;
+    margin: 0 auto;
 }
 .header_inner nav ul{
-    display: flex;
-    gap: 100px;
+    display: flex;  
+    justify-content: space-around;
+    max-width: 625px;
+    align-items: center;
+    margin: 22px auto;
 }
 .home {
     color: #6DA0FF;
@@ -39,6 +46,7 @@ ul, li {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 3px;
 }
 .home img {
     width: 24px;
@@ -51,4 +59,62 @@ nav > ul > li:nth-child(n+2) {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+}
+
+#footer {
+    box-sizing: border-box;
+    border-top: 1px solid #ECECEC;
+    background: #E7EBF1;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Pretendard-Regular';
+}
+.footer-inner {
+    margin: 0 auto;
+    width: 60%;
+}
+.site-map a{
+    position: relative;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.site-map a:first-child {
+    color: #000;
+    font-weight: 700;
+}
+.site-map a:last-child {
+    color: #555;
+    font-weight: 400;
+}
+#footer .wrap01, .wrap02 {
+    display: flex;
+    margin-top: 10px;
+}
+#footer .wrap01 li, .wrap02 li{
+    margin-right: 20px;
+}
+.footer-div01 {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-div02 {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+.black {
+    color: #333;
+}
+.right {
+    display: flex;
+}
+.right a{
+    margin-right: 10px;
+}
+.right img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
