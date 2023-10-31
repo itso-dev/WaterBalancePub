@@ -1,4 +1,6 @@
-
+body {
+    margin: 0 !important;
+}
 @font-face {
     font-family: 'OAGothic-Medium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-Medium.woff2') format('woff2');
@@ -68,7 +70,6 @@ nav > ul > li:nth-child(n+2) {
 }
 #page1 {
     background-color: white;
-    overflow-x: hidden;
 }
 .pg1-background {
     background: #5A93FD;
@@ -77,6 +78,9 @@ nav > ul > li:nth-child(n+2) {
 }
 .pg1-div {
     position: relative;
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
 }
 .main-photo-div {
    display: flex;
@@ -85,36 +89,42 @@ nav > ul > li:nth-child(n+2) {
 }
 .main_photo {
     max-width: 650px;
+    width: 95%;
     margin: 200px auto;
+    z-index: 10;
 }
 .eclipse1 {
     width: 240px;
     position: absolute;
-    right: 150px;
+    right: -350px;
     top: -30px;
     margin-right: auto;
 }
 .eclipse2 {
     width: 390px;
     position: absolute;
-    left: 140px; 
+    left: -200px; 
     bottom: -90px;
 }
 .middle-div {
     position: relative;
     top: -120px;
     display: flex;
-    flex-wrap: wrap;
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
+    gap: 5%;
+}
+.photo1-div {
+    width: 55%;
 }
 .photo1 {
-    width: 700px;
+    width: 100%;
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.15);
 }
 .water-div {
-    margin-left: 20px;
-    margin-top: 180px;
+    width: 45%;
+    margin-top: 220px;
 }
 .strong {
     color: #222;
@@ -126,7 +136,6 @@ nav > ul > li:nth-child(n+2) {
     margin-bottom: 20px;
 }
 .photo1_detail {
-     width: 550px;
     color: #222;
     font-family: Pretendard;
     font-size: 18px;
@@ -140,6 +149,7 @@ nav > ul > li:nth-child(n+2) {
     margin-top: 20px;
 }
 .btn {
+    box-sizing: border-box;
     border-radius: 40px;
     background: #1770E2;
     padding: 10px 30px;
@@ -156,9 +166,11 @@ button img {
     margin-bottom: 3px;
 }
 #page2 .btn2 {
-    float: right;
+    display: block;
+    margin-left: auto;
 }
 .btn2 {
+    box-sizing: border-box;
     border-radius: 40px;
     background: #51B693;
     padding: 10px 30px;
@@ -182,17 +194,19 @@ button img {
 }
 .photo2-container, .photo3-container, .photo4-container, .contact-container {
     display: flex;
-    flex-wrap: wrap;
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
+    gap: 2%;
 }
 .photo2_div {
-    width: 430px;
-    margin-right: 40px;
+    width: 35%;
+}
+.photo2-wrap {
+    width: 65%;
 }
 .photo2 {
-    width: 800px;
+    width: 100%;
 }
 .title {
     color: #111;
@@ -227,12 +241,12 @@ button img {
     line-height: 40px; /* 200% */
     letter-spacing: -0.4px;
     text-transform: uppercase;
+    box-sizing: border-box;
     padding: 10px;
 }
 .brown {
     color: white;
-    width: 160px;
-    height: 40px;
+    width: 170px;
     padding: 4px 0px;
     text-align: center;
     font-weight: 700;
@@ -244,26 +258,28 @@ button img {
     display: flex;
 }
 .eco {
-    width: 253px;
+    width: calc(100%-180px);
 }
 #page3 {
     background: #E7EEF1;
 }
+.photo3-wrap {
+    width: 50%;
+}
 .photo3 {
-    width: 600px;
+    width: 100%;
 }
 #page3 .title, #page4 .title {
     margin: 20px 0;
 }
 .photo3_div {
-    width: 600px;
+    width: 50%;
     margin-left: 70px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
 }
 .photo3_detail {
-    width: 600px;
     color: #111;
     text-align: right;
     font-family: Pretendard;
@@ -285,10 +301,10 @@ button img {
     background: #555;
     text-align: center;
     margin-right: 10px;
-    height: 40px;
+    font-weight: 700;
 }
 .clean {
-    width: 340px;
+    width: calc(100%-220px);
 }
 #page4 {
     background: #E7EEF1;
@@ -296,17 +312,21 @@ button img {
     padding: 120px 0;
 }
 .photo4_div {
-    width: 600px;
+    width: 53%;
     margin-right: 70px;
 }
+.photo4-wrap {
+    width: 47%;
+}
 .photo4 {
-    width: 600px;
+    width: 100%;
 }
 .photo4_detail {
     color: #111;
     font-family: Pretendard;
     font-size: 18px;
     font-style: normal;
+    font-weight: 500;
     line-height: 34px; /* 188.889% */
     letter-spacing: -0.36px;
     text-transform: uppercase;
@@ -321,11 +341,13 @@ button img {
     letter-spacing: -0.4px;
     text-transform: uppercase;
     margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .rent span {
     padding: 5px 10px;
     border: 1px solid #C2C7D0;
-    margin-right: 5px;
 }
 #contact {
     background: url("../img/back.png");
@@ -374,6 +396,7 @@ button img {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .label {
     width: 10%;
@@ -448,7 +471,8 @@ button img {
 }
 .inputs textarea {
     display: flex;
-    width: 499px;
+    max-width: 500px;
+    width: 100%;
     padding: 15px 10px;
     align-items: center;
     resize: none;
@@ -521,6 +545,7 @@ label {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .footer-div02 {
     margin-top: 30px;
@@ -541,12 +566,124 @@ label {
     height: 30px;
     vertical-align: middle;
 }
+
 @media (max-width: 1540px) {
     .eclipse1 {
         right: 20px;
     }
     .eclipse2 {
-        left: -50px;
+        left: -80px;
+    }   
+}
+@media (max-width: 1024px) {
+    .eclipse1 {
+        right: -80px;
     }
-    
+    .eclipse2 {
+        bottom: -170px;
+    }
+    .middle-div {
+        flex-wrap: wrap;
+        gap: 40px;
+        top: 300px;
+        margin-bottom: 400px;
+    }
+    .photo3-container, .photo4-container, .contact-container {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .photo2-container, .photo4-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .photo1-div, .water-div, .photo2_div, .photo2-wrap, .photo3-wrap, .photo3_div, .photo4_div, .photo4-wrap, .logo2_div, .contact_div {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+    .middle_div {
+        top: 200px !important;
+        margin-bottom: 300px !important;
+    }
+    #page3 .btn {
+        padding: 20px 80px;
+        font-size: 36px;
+        font-weight: 800;
+    }
+    .btn2 {
+        padding: 20px 80px;
+        font-size: 36px;
+        font-weight: 800;
+        justify-content: center;
+    }
+}
+@media(max-width:768px) {
+    #page3 .btn, .btn2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo3_div {
+        align-items: flex-start;
+    }
+    .photo3_detail {
+        text-align: left; 
+        font-size: 22px;
+    }
+    .photo1_detail {
+        font-size: 22px;
+    }
+    .photo2_detail, .photo4_detail,  .rent {
+        font-size: 22px;
+    }
+    .list li{
+        font-size: 22px; 
+    }
+}
+@media(max-width:480px) {
+    .eclipse1 {
+        width: 50%;
+        right: -50px;
+    }
+    .eclipse2 {
+        width: 90%;
+        bottom: -70px;
+    }
+    .strong {
+        font-size: 48px;
+    }
+    .photo1_detail {
+        font-size: 17px;
+    }
+    .title {
+        font-size:40px;
+    }
+    .photo2_detail, .photo3_detail, .photo4_detail,  .rent {
+        font-size: 17px;
+    }
+    .list li{
+        font-size: 16px; 
+    }
+    #page3 .btn {
+        padding: 10px 60px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .btn2 {
+        padding: 10px 60px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .brown {
+        width: 120px;
+    }
+    .eco {
+        width: calc(100%-130px);
+    }
+    .brown2 {
+        width: ;
+    }
 }
