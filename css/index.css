@@ -221,6 +221,7 @@ nav > ul > li:nth-child(n+2) {
     line-height: 34px; /* 188.889% */
     letter-spacing: -0.36px;
     text-transform: uppercase;
+    word-break: keep-all;
 }
 #page1 .btn {
     margin-top: 20px;
@@ -275,6 +276,7 @@ button img {
     width: 90%;
     margin: 0 auto;
     gap: 2%;
+    word-break: keep-all;
 }
 .photo2_div {
     width: 35%;
@@ -425,7 +427,7 @@ button img {
     gap: 10px;
 }
 .rent span {
-    padding: 5px 10px;
+    padding: 0 10px;
     border: 1px solid #C2C7D0;
 }
 #contact {
@@ -438,7 +440,6 @@ button img {
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 120px 0;
-    margin: -2px;
 }
 .contact_div {
     width: 50%;
@@ -515,7 +516,8 @@ button img {
     content: "\2713";
     font-size: 150%;
     color: #ffffff;
-    vertical-align: 3px;
+    position: relative;
+    margin-left: 3px;
 }
 .round:checked {
     background-color:  #6DA0FF;
@@ -609,13 +611,14 @@ button img {
     content: "\2713";
     font-size: 150%;
     color: #ffffff;
-    vertical-align: 3px;
+    position: relative;
+    margin-left: 3px;
 }
 label {
     vertical-align: middle;
     cursor: pointer;
 }
-.agree-wrap  a{
+.agree-wrap  span{
     color: #3E7FFF;
     text-decoration-line: underline !important;
     position: relative;
@@ -684,7 +687,46 @@ label {
     height: 30px;
     vertical-align: middle;
 }
-
+.mo_br {
+    display: none !important;
+}
+.agree-modal {
+    display: none;
+    position: fixed;
+    max-width: 600px;
+    width: 90%;
+    z-index: 15;
+    top: 20%;
+    left: calc(50% - 300px);
+    border-radius: 15px;
+    background: #fff;
+    font-family: Pretendard;
+    box-sizing: border-box;
+    text-align: center;
+}
+.agree-modal div {
+    font-size: 20px;
+    color: black;
+}
+.agree-modal .head {
+    border-bottom: 1px solid #dee2e6;
+    padding: 2rem 2rem;
+}
+.agree-modal .txt {
+    padding: 2rem 2rem;
+}
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 13;
+    display: none;
+}
 @media (max-width:1920px) {
     eclips1 {
         right: 80px;
@@ -700,6 +742,18 @@ label {
     .water-div {
         margin-top: 150px;
     }   
+    .photo3_div {
+        align-items: flex-start;
+    }
+    .photo3_detail {
+        text-align: left;
+    }
+    .photo2_div{
+        width: 50%;
+    }
+    .photo2-wrap {
+        width: 50%;
+    }
 }
 @media (max-width: 1024px) {
     .eclipse1 {
@@ -743,8 +797,9 @@ label {
         display: block;
         margin-left: auto;
     }
-}   .photo3_detail {
-    text-align: left;
+    .contact_div p {
+        text-align: center;
+    }
 }
 @media(max-width:768px) {
     .eclipse1 {
@@ -758,7 +813,6 @@ label {
     }
     .header {
         background: white;
-        width: 95%;
         margin: 0 auto;
     }
     .pg1-background {
@@ -789,13 +843,13 @@ label {
         font-size: 22px; 
     }
     #page3 .btn {
-        padding: 20px 80px;
-        font-size: 36px;
+        padding: 20px 50px;
+        font-size: 30px;
         font-weight: 800;
     }
     .btn2 {
-        padding: 20px 80px;
-        font-size: 36px;
+        padding: 20px 50px;
+        font-size: 30px;
         font-weight: 800;
         justify-content: center;
     }
@@ -804,9 +858,6 @@ label {
     }
     .mo-menu-open {
         display: block !important;
-    }
-    .contact_div p {
-        text-align: center;
     }
     .gnb-opacity {
         background: transparent !important;
@@ -859,32 +910,42 @@ label {
         margin-bottom: 200px;
     }
     .strong {
-        font-size: 48px;
+        font-size: 40px;
     }
     .photo1_detail {
-        font-size: 17px;
+        font-size: 15px;
     }
     .title {
-        font-size:40px;
+        font-size:30px;
     }
     .photo2_detail, .photo3_detail, .photo4_detail,  .rent {
-        font-size: 17px;
+        font-size: 16px;
     }
     .list li{
-        font-size: 16px; 
+        font-size: 15px; 
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .btn img {
+        width: 21px;
     }
     #page3 .btn {
-        padding: 10px 60px;
-        font-size: 30px;
+        padding: 10px 40px;
+        font-size: 20px;
         font-weight: 800;
     }
     .btn2 {
-        padding: 10px 60px;
-        font-size: 30px;
+        padding: 10px 40px;
+        font-size: 20px;
         font-weight: 800;
     }
     .brown {
         width: 120px;
+        font-size: 15px;
+    }
+    .brown2 {
+        font-size: 15px;
     }
     .eco {
         width: calc(100% - 130px);
@@ -899,13 +960,14 @@ label {
         width: calc(100% - 140px);
     }
     .round {
-        width: 25px;
-        height: 25px;
         margin-left: 20px;
     }
     .contact_div .contact-wrap:nth-child(3) {
         display: flex;
         flex-wrap: wrap;
+    }
+    .contact_div .contact-wrap:nth-child(3) div:nth-child(2) {
+        gap: 10px;
     }
     .chk-wrap:last-child {
         margin-right: 0;
@@ -921,5 +983,22 @@ label {
     }
     .input, .input2, .input3, .inputs {
         width: 85%;
+    }
+    .contact-container {
+        gap: 70px;
+    }
+    .logo2 {
+        width: 40%;
+    }
+    .mo_br {
+        display: block !important;
+    }
+    .agree-modal {
+        width: 300px;
+        margin: 0 auto;
+        left: calc(50% - 150px);
+    }
+    .agree-modal div{
+        font-size: 15px;
     }
 }
