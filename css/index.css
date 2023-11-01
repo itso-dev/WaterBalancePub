@@ -317,7 +317,7 @@ button img {
     font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
-    line-height: 40px; /* 200% */
+    line-height: 40px; 
     letter-spacing: -0.4px;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -862,6 +862,21 @@ label {
     .gnb-opacity {
         background: transparent !important;
     }
+    .strong {
+        font-size: 45px;
+    }
+    .photo1_detail {
+        font-size: 19px;
+    }
+    .title {
+        font-size:35px;
+    }
+    .photo2_detail, .photo3_detail, .photo4_detail,  .rent {
+        font-size: 21px;
+    }
+    .list li{
+        font-size: 20px; 
+    }
 }
 @media(max-width:480px) {
 
@@ -923,6 +938,8 @@ label {
     }
     .list li{
         font-size: 15px; 
+        line-height: 25px;
+        padding: 5px;
     }
     .btn {
         font-size: 16px;
@@ -943,9 +960,11 @@ label {
     .brown {
         width: 120px;
         font-size: 15px;
+        border-radius: 15px;
     }
     .brown2 {
         font-size: 15px;
+        border-radius: 15px;
     }
     .eco {
         width: calc(100% - 130px);
@@ -958,6 +977,8 @@ label {
     }
     .clean {
         width: calc(100% - 140px);
+        position: relative;
+        margin-top: 5px;
     }
     .round {
         margin-left: 20px;
@@ -1000,5 +1021,14 @@ label {
     }
     .agree-modal div{
         font-size: 15px;
+    }
+    .contact_div p {
+        font-size: 40px;
+    }
+    .contact_div p img {
+        width: 45px;
+    }
+    .input-box, .input-box2, .input-box3 {
+        font-size: 14px;
     }
 }
