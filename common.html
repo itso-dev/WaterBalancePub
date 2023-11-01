@@ -10,10 +10,11 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/reset.css" rel="stylesheet" />
 
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     </head>
     <body>
         <!-- 상단 레이아웃 -->
-        <div id="header">
+        <div class="header">
             <div class="header_inner">
                 <div><img src="./img/LOGO.png" alt="" class="logo"></div>
                 <nav>
@@ -24,6 +25,25 @@
                        <li>CONTACT</li>
                     </ul>
                 </nav>
+                <div class="mo-menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mo-menu-container">
+                <div class="mo-menu-wrap"> 
+                    <div class="head">
+                        <div><img src="./img/LOGO.png" alt="" class="logo"></div>
+                        <div><img src="./img/Close.png" alt="" class="close"></div>
+                    </div>
+                    <div class="menu-wrap">
+                        <div class="menu"><a href="">HOME</a></div>
+                        <div class="menu"><a href="">ABOUT US</a></div>
+                        <div class="menu"><a href="">SERVICE</a></div>
+                        <div class="menu"><a href="">CONTACT</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 메인 레이아웃 -->
@@ -81,7 +101,7 @@
                         <li><div class="brown2">수중 정화 활동</div>물 속에 있는 쓰레기를 수거하는 작업 입니다.</li>
                         <li><div class="clean-div">
                         <div class="brown2">해양 쓰레기 데이터 수집</div>
-                        <div class="clean">쓰레기 수거를 하기 위한 기초적인</br> 
+                        <div class="clean">쓰레기 수거를 하기 위한 기초적인 
                             데이터를 생산합니다.</div>
                         </div>
                         </li>
@@ -109,7 +129,14 @@
                     <p><img src="./img/Speech.png" alt="">&nbsp;문의하기</p>
                     <div class="contact-wrap">
                         <div class="label">종류</div>
-                        <div class="input"></div>
+                        <div class="input3">
+                            <div class="chk-wrap">
+                                <label for="chk1">교육문의<input type="checkbox" name="chk1" id="chk1" class="round" required><span class="checked"></span></label>
+                            </div>
+                            <div class="chk-wrap">
+                                <label for="chk2">장비렌트<input type="checkbox" name="chk2" id="chk2" class="round" required><span class="checked"></span></label>
+                            </div>
+                        </div>
                     </div>
                     <div class="contact-wrap">
                         <div class="label">이름</div>
@@ -131,7 +158,7 @@
                     </div>
                     <div class="contact-wrap">
                         <div class="agree-wrap">
-                            <label><input type="checkbox" name="agree" id="agree" class="square" required>개인정보처리방침</label>
+                            <label for="chk3"><input type="checkbox" name="chk3" id="chk3" class="square" required>개인정보처리방침</label>
                             <a href="">보기</a>
                         </div>
                     </div>
@@ -172,3 +199,69 @@
         </div>
     </body>
 </html>
+
+<script>
+    
+    $(".mo-menu-open").click(function (){
+        $(".mo-menu-container").fadeIn("500");
+    });
+    $(".close").click(function (){
+        $(".mo-menu-container").fadeOut("500");
+    });
+  
+
+    var rounds = document.querySelectorAll('.round');
+    var chkwrap = document.querySelectorAll('.chk-wrap');
+
+    rounds.forEach(function(round, index) {
+        round.addEventListener('change', function() {
+            if (rounds[0].checked) {
+                chkwrap[0].style.backgroundColor = '#6DA0FF';
+                chkwrap[0].style.color = '#FFF';
+            } else {
+                chkwrap[0].style.backgroundColor = 'transparent';
+                chkwrap[0].style.color = '#6DA0FF';
+            }
+        });
+
+        round.addEventListener('change', function() {
+            if (rounds[1].checked) {
+                chkwrap[1].style.backgroundColor = '#6DA0FF';
+                chkwrap[1].style.color = '#FFF';
+            } else {
+                chkwrap[1].style.backgroundColor = 'transparent';
+                chkwrap[1].style.color = '#6DA0FF';
+            }
+        });
+    });
+    $( document ).ready(function() {
+
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop == 0) {
+            $(".header").addClass("gnb-opacity");
+        } else {
+            $(".header").removeClass("gnb-opacity");
+        }
+        });
+        document.addEventListener('scroll', function() {
+        detectTop()
+        });
+
+        function detectTop() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop == 0) {
+            $(".header").addClass("gnb-opacity");
+            return true;
+        } else {
+            $(".header").removeClass("gnb-opacity");
+            return false;
+        }
+        }
+
+
+
+
+
+
+
+</script>
