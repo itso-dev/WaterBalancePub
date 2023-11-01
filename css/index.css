@@ -977,6 +977,8 @@ label {
     }
     .clean {
         width: calc(100% - 140px);
+    }
+    .clean:last-child {
         position: relative;
         margin-top: 5px;
     }
