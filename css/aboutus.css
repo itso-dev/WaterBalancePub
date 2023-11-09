@@ -1,0 +1,331 @@
+.about {
+    color: #6DA0FF !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    margin-top: 2px;
+}
+.about img {
+    width: 24px;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 3px;
+}
+nav  {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#about-page2 {
+    background: #E7EEF1;
+}
+.about-page1-inner {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0 120px;
+}
+.who {
+    color: #222;
+    font-family: 'OAGothic-Medium';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+}
+.who span {
+    font-family: 'OAGothic-ExtraBold';
+}
+.we {
+    width: 600px;
+    color: #222;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; 
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+.about-photo1-container {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 120px 0;
+}
+.about-photo1-div {
+    width: 50%;
+}
+.about-photo1-div img {
+    width: 100%;
+}
+.about-photo1-detail {
+    width: 50%;
+    word-break: keep-all;
+    box-sizing: border-box;
+    padding: 10px 0;
+    padding-left: 40px; 
+    color: #111;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.detail-top {
+    margin-bottom: 30px;
+}
+#about-page3 {
+    background: #E7EEF1;
+}
+.about-photo2-container {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 150px;
+    word-break: keep-all;
+}
+.about-photo2-detail {
+    width: 47%;
+    color: #111;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 188.889% */
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+.about-photo2-div {
+    width: 53%;
+}
+.about-photo2 {
+    width: 100%;
+}
+.path3 {
+    width: 100%;
+}
+#about-page4 {
+    background: #242737;
+    margin: -2px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 0 120px;
+}
+.about-detail-container {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 0 40px;
+}
+.detail01, .detail02 {
+    display: flex;
+}
+.detail01-div, .detail02-div {
+    width: 47%;
+    margin-right: 40px;
+    word-break: keep-all;
+}
+.detail-photo-div {
+    width: 53%;
+}
+.detail-photo1, .detail-photo2 {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.about-2022, .about-2023 {
+    display: flex;
+}
+.div-2022, .div-2023 {
+    width: 20%;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+}
+#about-page4 p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#about-page4 ul li{
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.about-2022 {
+    border-bottom: 1px solid #51587E;
+    padding-bottom: 20px;
+}
+.about-2023 {
+    padding-top: 20px;
+}
+.detail01 {
+    padding-bottom: 120px;
+    border-bottom: 1px solid #51587E;
+}
+.detail02 {
+    padding-top: 120px;
+}
+.mo {
+    display: none;
+}
+.mo2 {
+    display: none;
+}
+@media(max-width:1024px) {
+    br {
+        display: none !important;
+    }
+    .fixed {
+        display: block !important;
+    }
+    .about-2022, .about-2023 {
+        display: block;
+    } 
+}
+@media(max-width:900px) {
+    .about-photo1-detail {
+        padding-top: 0;
+        line-height: 30px;
+    }
+    .detail-top {
+        margin-bottom: 20px;
+    }
+    .about-photo2-detail {
+        line-height: 30px;
+    }
+}
+@media (max-width:768px) {
+    .who {
+        font-size: 42px;
+    }
+    .we {
+        font-size: 16px;
+        width: 100%;
+    }
+    .about-photo1-container {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 60px 0;
+    }
+    .about-photo1-div {
+        width: 100%;
+    }
+    .about-photo1-detail {
+        width: 100%;
+        padding-left: 0;
+        font-size: 16px; 
+    }
+    .about-photo2-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 0px 0 75px;
+    }
+    .about-photo2-div {
+        width: 100%;
+    }
+    .about-photo2-detail {
+        width: 100%;
+        padding-left: 0; 
+        font-size: 16px;
+    }
+    .detail01, .detail02 {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .detail01 {
+        padding-bottom: 30px;
+    }
+    .detail02 {
+        padding-top: 30px;
+    }
+    .detail01-div, .detail02-div, .detail-photo1, .detail-photo2 {
+        width: 100%;
+    }
+    .mo {
+        display: block !important;
+    }
+    .pc {
+        display: none;
+    }
+    .div-2022, .div-2023 {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    #about-page4 {
+        padding-bottom: 80px;
+    }
+    #about-page4 p {
+        font-size: 35px;
+    }
+    #about-page4 ul li {
+        font-size: 16px;
+    }
+    .detail-photo-div {
+        width: 100%;
+    }
+}
+@media(max-width:480px) {
+    .about-page1-inner {
+        padding: 140px 0 60px;
+    }
+    .who {
+        font-size: 33px;
+    }
+    .we {
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .about-photo1-container {
+        padding: 60px 0;
+        margin-top: -3px;
+    }
+    .about-photo1-detail, .about-photo2-detail {
+        font-size: 16px;
+    }
+    .mo2 {
+        display: block !important;
+    }
+    #about-page4 p {
+        font-size: 30px;
+    }
+    #about-page4 ul li {
+        font-size: 14px;
+    }
+    .div-2022, .div-2023 {
+        font-size: 20px;
+    }
+}
+
