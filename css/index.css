@@ -488,6 +488,7 @@ label {
 }
 #contact .btn {
     float: right;
+    margin-top: 20px;
 }
 .mo_br {
     display: none !important;
@@ -507,7 +508,7 @@ label {
     text-align: center;
 }
 .agree-modal div {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 .agree-modal .head {
@@ -683,6 +684,32 @@ label {
     .clean {
         width: calc(100% - 140px);
     }
+    .agree-modal {
+        width: 70%;
+        left: 15%;
+    }
+    .agree-modal div {
+        font-size: 15px;
+        color: black;
+    }
+    #contact .btn {
+        padding: 10px 30px;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: -0.36px;
+    }
+    #contact .btn img {
+        width: 24px;
+    }
+}
+@media(max-width:650px) {
+    .contact_div p{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .contact_div p img {
+        width: 50px;
+    }
 }
 @media(max-width:480px) {
     .eclipse1 {
@@ -730,8 +757,11 @@ label {
         font-size: 20px;
         font-weight: 800;
     }
-    #contact .btn {
-        padding: 10px 30px;
+    #contact {
+        padding: 100px 0 40px;
+    }
+    .logo2_div {
+        display: none;
     }
     .btn2 {
         padding: 10px 50px;
@@ -794,15 +824,14 @@ label {
     }
     .logo2 {
         width: 40%;
-    }
-    
+    } 
     .agree-modal {
         width: 300px;
         margin: 0 auto;
         left: calc(50% - 150px);
     }
     .agree-modal div{
-        font-size: 15px;
+        font-size: 13px;
     }
     .contact_div p {
         font-size: 40px;
@@ -813,4 +842,14 @@ label {
     .input-box, .input-box2, .input-box3 {
         font-size: 14px;
     }
+    .agree-modal .head {
+        padding: 1rem 1rem;
+    }
+    .agree-modal .txt {
+        padding: 1rem 1rem;
+    }
+    .contact_div p {
+        text-align: left;    
+    }
+    
 }
